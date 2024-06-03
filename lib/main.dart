@@ -5,7 +5,14 @@ import 'package:webrtc_tutorial/signaling.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: FirebaseOptions(
+      apiKey: "AIzaSyAzb2QrAai3944u93-MV6GYbDoif1taEeE",
+      appId: "1:665054180024:web:19c02e4d9a7750fb307a4d",
+      messagingSenderId: "665054180024",
+      projectId: "webrtc-flutter-50377",
+    ),
+  );
   runApp(MyApp());
 }
 
